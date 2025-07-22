@@ -4,8 +4,7 @@
 - I’m looking to collaborate on Web Development ...
 - 📫 How to reach me My_Portfolio: https://kelvin-mukaria-kev-dev.vercel.app/
 -                   Contacts: 0757086742 | 0708889092
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: Hah, 
+
 
 <!---
 Kevrollin/Kevrollin is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
