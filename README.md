@@ -124,7 +124,7 @@
 
 <div align="center">
 
-<img src="https://kelvinmukaria.vercel.app/kelvin-avatar.png" alt="Kelvin Mukaria" width="120" />
+<!-- <img src="https://kelvinmukaria.vercel.app/kelvin-avatar.png" alt="Kelvin Mukaria" width="120" /> -->
 
 # Kelvin Mukaria
 
