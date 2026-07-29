@@ -1,278 +1,394 @@
-<div align="center">
-  
-  <!-- Animated Header Banner with Wave -->
-  <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#0A1D37;stop-opacity:1" />
-        <stop offset="50%" style="stop-color:#1a3a5c;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#0A1D37;stop-opacity:1" />
-      </linearGradient>
-      <filter id="glow">
-        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-        <feMerge>
-          <feMergeNode in="coloredBlur"/>
-          <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-      </filter>
-    </defs>
-    <rect width="100%" height="100%" fill="url(#headerGradient)"/>
-    <path d="M0,120 Q250,80 500,120 T1000,120 L1000,150 L0,150 Z" fill="#0A1D37" opacity="0.3">
-      <animate attributeName="d" 
-               values="M0,120 Q250,80 500,120 T1000,120 L1000,150 L0,150 Z;M0,120 Q250,100 500,120 T1000,120 L1000,150 L0,150 Z;M0,120 Q250,80 500,120 T1000,120 L1000,150 L0,150 Z" 
-               dur="3s" 
-               repeatCount="indefinite"/>
-    </path>
-    <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#F8F9FA" text-anchor="middle" dominant-baseline="middle" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1;1;0" dur="2s" repeatCount="indefinite"/>
-      Kelvin Mukaria ⚡️ KevDev
-    </text>
-  </svg>
+<!--
+  Kelvin Mukaria — GitHub Profile README
+  =================================================================
+  This file is the special GitHub "profile README". GitHub renders it
+  at the top of a profile page ONLY when it lives in a public repo
+  named exactly the same as the account, e.g. github.com/Kevrollin/Kevrollin.
 
-  <h2 align="center" style="color: #0A1D37; margin-top: 20px;">
-    <span style="animation: fadeIn 2s;">Developer | Ethical Hacker | Innovator | Visionary</span>
-  </h2>
+  This repository (Kelvin-Mukaria-KevDev) is the portfolio site's own
+  source code, so this file is kept separate from that project's
+  README.md. Create (or reuse) a repo literally named `Kevrollin` and
+  paste this file's contents there as README.md.
 
-  <blockquote align="center" style="border-left: 4px solid #0A1D37; padding-left: 20px; font-style: italic; color: #555;">
-    "I don't just write code. I design digital realities."
-  </blockquote>
+  HOW TO CUSTOMIZE
+  - Every link, badge color, and icon URL is declared once below in the
+    CONFIGURATION block as a markdown reference definition. Reference
+    definitions ([name]: url) are invisible when rendered — change a
+    URL there and every place that uses it updates automatically.
+  - Content sections follow, each marked with an HTML comment banner.
+  - Anything requiring action is marked TODO.
+-->
 
-  <p align="center">
-    <strong>Building the future</strong> with <code>blockchain</code>, <code>AI</code>, <code>cybersecurity</code>, and <code>impactful digital ecosystems</code>
-  </p>
+<!-- =====================================================================
+     CONFIGURATION — edit values here, not in the sections below
+     ===================================================================== -->
 
-  <hr style="border: 1px solid #0A1D37; margin: 30px 0;"/>
+<!-- Identity & contact -->
+[link-portfolio]: https://kelvinmukaria.vercel.app
+[link-linkedin]: https://www.linkedin.com/in/kelvinmukaria/
+[link-github]: https://github.com/Kevrollin
+[link-email]: mailto:kelvinmukaria2023@gmail.com
+[link-resume]: # "TODO: replace with a hosted resume/CV URL"
+[link-ardena]: https://ardena.co.ke
+[img-avatar]: https://kelvinmukaria.vercel.app/kelvin-avatar.png
 
-</div>
+<!-- Hero badges -->
+[badge-portfolio]: https://img.shields.io/badge/Portfolio-6366F1?style=for-the-badge&logo=vercel&logoColor=white
+[badge-linkedin]: https://img.shields.io/badge/LinkedIn-334155?style=for-the-badge&logo=linkedin&logoColor=white
+[badge-email]: https://img.shields.io/badge/Email-06B6D4?style=for-the-badge&logo=gmail&logoColor=white
+[badge-resume]: https://img.shields.io/badge/Resume-1E293B?style=for-the-badge
+[badge-github]: https://img.shields.io/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white
+[badge-location]: https://img.shields.io/badge/Nakuru%20%26%20Meru%2C%20Kenya-1E293B?style=flat-square&logo=googlemaps&logoColor=white
+[badge-status]: https://img.shields.io/badge/Status-Open%20to%20Opportunities-06B6D4?style=flat-square
 
----
+<!-- Typing SVG (readme-typing-svg, actively maintained via demolab.com) -->
+[img-typing]: https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1000&color=06B6D4&center=true&vCenter=true&width=600&lines=Software+Engineer+%26+AI+Builder;Full-Stack+%7C+Security-Minded+%7C+Automation-Focused;Co-founder+%26+COO%2C+Ardena+Platform+Africa
 
-## 👨‍💻 About Me
+<!-- Tech stack — Frontend & Mobile -->
+[badge-react]: https://img.shields.io/badge/React-6366F1?style=flat-square&logo=react&logoColor=white
+[link-react]: https://react.dev
+[badge-typescript]: https://img.shields.io/badge/TypeScript-6366F1?style=flat-square&logo=typescript&logoColor=white
+[link-typescript]: https://www.typescriptlang.org
+[badge-javascript]: https://img.shields.io/badge/JavaScript-6366F1?style=flat-square&logo=javascript&logoColor=white
+[link-javascript]: https://developer.mozilla.org/docs/Web/JavaScript
+[badge-tailwind]: https://img.shields.io/badge/Tailwind%20CSS-6366F1?style=flat-square&logo=tailwindcss&logoColor=white
+[link-tailwind]: https://tailwindcss.com
+[badge-html5]: https://img.shields.io/badge/HTML5-6366F1?style=flat-square&logo=html5&logoColor=white
+[link-html5]: https://developer.mozilla.org/docs/Web/HTML
+[badge-css3]: https://img.shields.io/badge/CSS3-6366F1?style=flat-square&logo=css3&logoColor=white
+[link-css3]: https://developer.mozilla.org/docs/Web/CSS
+[badge-flutter]: https://img.shields.io/badge/Flutter-6366F1?style=flat-square&logo=flutter&logoColor=white
+[link-flutter]: https://flutter.dev
+[badge-dart]: https://img.shields.io/badge/Dart-6366F1?style=flat-square&logo=dart&logoColor=white
+[link-dart]: https://dart.dev
 
-```bash
-> whoami
-> Kelvin Mukaria aka KevDev | Kevrollin
-> Developer. Ethical Hacker. Visionary Builder.
-> Passionate about creating impactful digital ecosystems.
-```
+<!-- Tech stack — Backend & Data -->
+[badge-nodejs]: https://img.shields.io/badge/Node.js-06B6D4?style=flat-square&logo=nodedotjs&logoColor=white
+[link-nodejs]: https://nodejs.org
+[badge-express]: https://img.shields.io/badge/Express-06B6D4?style=flat-square&logo=express&logoColor=white
+[link-express]: https://expressjs.com
+[badge-firebase]: https://img.shields.io/badge/Firebase-06B6D4?style=flat-square&logo=firebase&logoColor=white
+[link-firebase]: https://firebase.google.com
+[badge-supabase]: https://img.shields.io/badge/Supabase-06B6D4?style=flat-square&logo=supabase&logoColor=white
+[link-supabase]: https://supabase.com
+[badge-postgresql]: https://img.shields.io/badge/PostgreSQL-06B6D4?style=flat-square&logo=postgresql&logoColor=white
+[link-postgresql]: https://www.postgresql.org
 
-**Currently building:**
-- **NIRU | AI HAckathon** -
-- **DSFS** - Decentralized Student Funding System
-- **Xendly Wallet** - Next-gen crypto wallet solution
-- **Opa.Rides** - AI-powered agency automation platform
+<!-- Tech stack — AI & Automation -->
+[badge-python]: https://img.shields.io/badge/Python-334155?style=flat-square&logo=python&logoColor=white
+[link-python]: https://www.python.org
 
----
+<!-- Tech stack — Cybersecurity -->
+[badge-kali]: https://img.shields.io/badge/Kali%20Linux-334155?style=flat-square&logo=kalilinux&logoColor=white
+[link-kali]: https://www.kali.org
 
-## 🛠️ Tech Stack
+<!-- Tech stack — Developer Tools -->
+[badge-git]: https://img.shields.io/badge/Git-1E293B?style=flat-square&logo=git&logoColor=white
+[link-git]: https://git-scm.com
+[badge-ghtool]: https://img.shields.io/badge/GitHub-1E293B?style=flat-square&logo=github&logoColor=white
+[link-ghtool]: https://github.com
+[badge-linux]: https://img.shields.io/badge/Linux-1E293B?style=flat-square&logo=linux&logoColor=white
+[link-linux]: https://www.kernel.org
+[badge-vscode]: https://img.shields.io/badge/VS%20Code-1E293B?style=flat-square&logo=visualstudiocode&logoColor=white
+[link-vscode]: https://code.visualstudio.com
+[badge-postman]: https://img.shields.io/badge/Postman-1E293B?style=flat-square&logo=postman&logoColor=white
+[link-postman]: https://www.postman.com
 
-<div align="center">
-  
-  <!-- Tech Icons Row 1 -->
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  
-  <br/>
-  
-  <!-- Tech Icons Row 2 -->
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  
-  <br/>
-  
-  <!-- Tech Icons Row 3 -->
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VSCode" />
-  
-</div>
+<!-- Featured project links -->
+[link-ardena-live]: https://ardena.co.ke/
+[link-jambosec-live]: https://jambosecaiio.vercel.app/
+[link-gitpilot-live]: http://mkgitpilot-dev.vercel.app/
+[link-hicacy-live]: https://hicacy.com/
 
----
+<!-- More-projects links -->
+[link-dppm-live]: https://dppmltd.com/
+[link-gerusabejo-live]: https://www.gerusabejoconstruction.com/
+[link-tuchas-live]: https://www.tuchasautospares.com/
+[link-patchnotes-live]: https://patch-notes-dev.vercel.app/
+[link-palinesco-live]: https://palinesco-plan-build-company.vercel.app/
+[link-palinesco-src]: https://github.com/Kevrollin/palinesco-plan-build-company
+[link-caffeinated-live]: https://caffeinated-thoughts-alpha.vercel.app/
+[link-caffeinated-src]: https://github.com/Kevrollin/caffeinated-thoughts-alpha
+[link-matatu-live]: https://transport-booking-matatu-app.vercel.app/
 
-## 📊 GitHub Stats
+<!-- GitHub analytics — username: Kevrollin -->
+[img-stats]: https://github-readme-stats.vercel.app/api?username=Kevrollin&show_icons=true&hide_border=true&bg_color=0D1117&title_color=06B6D4&icon_color=6366F1&text_color=CBD5E1&ring_color=6366F1
+[img-streak]: https://streak-stats.demolab.com?user=Kevrollin&hide_border=true&background=0D1117&ring=6366F1&fire=06B6D4&currStreakLabel=06B6D4&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=64748B
+[img-toplangs]: https://github-readme-stats.vercel.app/api/top-langs/?username=Kevrollin&layout=compact&hide_border=true&bg_color=0D1117&title_color=06B6D4&text_color=CBD5E1
+[img-activity]: https://github-readme-activity-graph.vercel.app/graph?username=Kevrollin&bg_color=0D1117&color=06B6D4&line=6366F1&point=FFFFFF&hide_border=true&area=true
+[img-views]: https://komarev.com/ghpvc/?username=Kevrollin&color=6366F1&style=flat-square&label=Profile+Views
 
-<div align="center">
-  
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=KevRollin&show_icons=true&theme=radical&hide_border=true&bg_color=0A1D37&title_color=F8F9FA&icon_color=00D9FF&text_color=F8F9FA" alt="GitHub Stats" />
-  
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KevRollin&layout=compact&theme=radical&hide_border=true&bg_color=0A1D37&title_color=F8F9FA&text_color=F8F9FA" alt="Top Languages" />
-  
-  <br/>
-  
-  <img src="https://github-readme-streak-stats.demolab.com/?user=KevRollin&theme=radical&hide_border=true&background=0A1D37&ring=00D9FF&fire=00D9FF&currStreakLabel=F8F9FA&sideLabels=F8F9FA&currStreakNum=00D9FF&sideNums=F8F9FA&dates=888888" alt="GitHub Streak" />
-  
-</div>
-
----
-
-## 🚀 Featured Projects
-
-| Project | Description | Link |
-|---------|-------------|------|
-| **DSFS** | Decentralized Student Funding System - A blockchain-based platform revolutionizing student financial aid through smart contracts and transparent fund distribution. | [🔗 View Project](#) |
-| **Lumina Wallet** | Next-generation cryptocurrency wallet with advanced security features, multi-chain support, and seamless DeFi integration. | [🔗 View Project](#) |
-| **Smart Agency** | AI-powered agency automation platform that streamlines workflows, enhances productivity, and drives intelligent business decisions. | [🔗 View Project](#) |
-| **PatchNotes Blog** | A developer-focused blog platform featuring technical deep-dives, cybersecurity insights, and innovative development practices. | [🔗 View Project](#) |
-
----
-
-## 🔨 Currently Building
-
-```yaml
-projects:
-  - name: "DSFS"
-    goal: "Decentralize student funding with blockchain transparency"
-    status: "🚧 In Development"
-    tech: [React, Solidity, Web3]
-    
-  - name: "Lumina Wallet"
-    goal: "Create the most secure and user-friendly crypto wallet"
-    status: "🚧 In Development"
-    tech: [Flutter, Rust, Blockchain]
-    
-  - name: "Smart Agency"
-    goal: "Automate agency operations with AI intelligence"
-    status: "🚧 In Development"
-    tech: [Next.js, FastAPI, AI/ML]
-```
-
----
-
-## 🎧 Currently Listening
+<!-- =====================================================================
+     HERO
+     ===================================================================== -->
 
 <div align="center">
-  
-  <!-- Spotify Now Playing - Using spotify-github-profile service -->
-  <img src="https://spotify-github-profile.vercel.app/api/view?uid=your_spotify_user_id&cover_image=true&theme=novatorem&show_offline=false&background_color=0A1D37&interchange=false&bar_color=00D9FF&bar_color_cover=false" alt="Spotify Now Playing" />
-  
-  <!-- Alternative: Simple text-based listening status -->
-  <p><em>🎵 Always coding to the beat...</em></p>
-  
+
+<img src="https://kelvinmukaria.vercel.app/kelvin-avatar.png" alt="Kelvin Mukaria" width="120" />
+
+# Kelvin Mukaria
+
+**Software Engineer · AI & Automation Builder · Co-founder & COO, [Ardena Platform Africa][link-ardena]**
+
+`@Kevrollin` · Nakuru & Meru, Kenya
+
+[![Kelvin Mukaria — animated role tagline][img-typing]][link-portfolio]
+
+I design and ship production-grade full-stack systems — pairing hands-on engineering with a security-first mindset and applied AI tooling.
+
+[![Portfolio][badge-portfolio]][link-portfolio]
+[![LinkedIn][badge-linkedin]][link-linkedin]
+[![Email][badge-email]][link-email]
+[![Resume][badge-resume]][link-resume]
+[![GitHub][badge-github]][link-github]
+
+[![Open to opportunities][badge-status]](#connect)
+[![Based in Nakuru and Meru, Kenya][badge-location]](#connect)
+
+<p>
+<a href="#about">About</a> ·
+<a href="#engineering-philosophy">Philosophy</a> ·
+<a href="#tech-stack">Tech Stack</a> ·
+<a href="#featured-projects">Projects</a> ·
+<a href="#current-focus">Focus</a> ·
+<a href="#open-source">Open Source</a> ·
+<a href="#github-analytics">Analytics</a> ·
+<a href="#connect">Connect</a>
+</p>
+
 </div>
 
 ---
 
-## 💬 Developer Creed
+<!-- =====================================================================
+     ABOUT
+     ===================================================================== -->
 
-<div align="center" style="background: linear-gradient(135deg, #0A1D37 0%, #1a3a5c 100%); padding: 30px; border-radius: 15px; margin: 30px 0; border: 2px solid #00D9FF; box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);">
-  
-  <blockquote style="border: none; font-size: 1.2em; color: #F8F9FA; font-weight: 600; line-height: 1.8;">
-    <em>
-      "I don't chase frameworks. I master ecosystems.<br/>
-      I don't just solve problems. I eliminate inefficiencies.<br/>
-      I build for scale, security, and the streets."
-    </em>
-  </blockquote>
-  
-</div>
+## About
 
----
+Software Engineer and AI & Automation Builder based in Kenya, working across the full stack — from React/TypeScript interfaces to Node.js, Firebase, and Supabase/PostgreSQL-backed systems.
 
-## 📬 Connect With Me
+As **Co-founder & COO of [Ardena Platform Africa][link-ardena]**, I pair hands-on engineering with product and operations ownership — building a peer-to-peer vehicle marketplace from architecture through to production, live since 2023.
+
+Security is part of how I build, not a separate concern. An ethical hacking and network analysis background — Kali Linux, security auditing — informs how systems get designed from day one. On the AI and automation side, I build tools that remove friction from real workflows, from developer CLI automation to AI-integrated platforms.
+
+Most of what follows is live and in active use, not left in a repository.
 
 <div align="center">
-  
-  <!-- Social Links with Brand Colors -->
-  <a href="https://twitter.com/kevrollin" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
-  </a>
-  
-  <a href="https://linkedin.com/in/kelvinmukaria" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  
-  <a href="https://kelvin-mukaria-kev-dev.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-0A1D37?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
-  
-  <br/><br/>
-  
-  <a href="mailto:kelvinmukaria2023@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  
-  <a href="tel:+254708889092" target="_blank">
-    <img src="https://img.shields.io/badge/Phone-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Phone" />
-  </a>
-  
-  <a href="https://wa.me/254757086742" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
-  </a>
-  
+
+| 20+ | 16 | 12+ |
+|:---:|:---:|:---:|
+| Shipped Projects | Domains of Practice | Core Technologies |
+
 </div>
 
 ---
 
-## ⚡ Quick Stats
+<!-- =====================================================================
+     ENGINEERING PHILOSOPHY
+     ===================================================================== -->
+
+## Engineering Philosophy
+
+- **Own the full lifecycle.** Architecture, implementation, deployment, and iteration — not just the feature layer.
+- **Security by default.** Systems are threat-modeled and hardened from the start, informed by direct ethical hacking and network analysis practice.
+- **Automate the repeatable.** Workflow tooling exists to remove friction from real development work, not to add process for its own sake.
+- **Apply AI where it solves a problem.** Integration is judged by the workflow it improves, not by novelty.
+- **Bias toward production.** Multiple live, maintained products carry more weight than unfinished side projects.
+
+---
+
+<!-- =====================================================================
+     TECH STACK
+     ===================================================================== -->
+
+## Tech Stack
+
+### Frontend & Mobile
+
+[![React][badge-react]][link-react]
+[![TypeScript][badge-typescript]][link-typescript]
+[![JavaScript][badge-javascript]][link-javascript]
+[![Tailwind CSS][badge-tailwind]][link-tailwind]
+[![HTML5][badge-html5]][link-html5]
+[![CSS3][badge-css3]][link-css3]
+[![Flutter][badge-flutter]][link-flutter]
+[![Dart][badge-dart]][link-dart]
+
+### Backend & Data
+
+[![Node.js][badge-nodejs]][link-nodejs]
+[![Express][badge-express]][link-express]
+[![Firebase][badge-firebase]][link-firebase]
+[![Supabase][badge-supabase]][link-supabase]
+[![PostgreSQL][badge-postgresql]][link-postgresql]
+
+REST API design underpins most projects below, each built around a documented API layer.
+
+### AI & Automation
+
+[![Python][badge-python]][link-python]
+
+Applied focus: AI feature integration, workflow automation, and prompt engineering — built into products such as JamboSec AI and MK GitPilot rather than kept as standalone experiments.
+
+### Cybersecurity
+
+[![Kali Linux][badge-kali]][link-kali]
+
+Applied focus: ethical hacking, network analysis, and security auditing — practiced hands-on and carried into how backend systems and APIs get designed.
+
+### Developer Tools
+
+[![Git][badge-git]][link-git]
+[![GitHub][badge-ghtool]][link-ghtool]
+[![Linux][badge-linux]][link-linux]
+[![VS Code][badge-vscode]][link-vscode]
+[![Postman][badge-postman]][link-postman]
+
+---
+
+<!-- =====================================================================
+     FEATURED PROJECTS
+     ===================================================================== -->
+
+## Featured Projects
+
+### [Ardena Platform Africa — Car Rental Marketplace][link-ardena-live]
+
+Peer-to-peer car rental platform connecting verified vehicle owners with renters across Kenya, live since 2023.
+
+- **Problem solved:** idle private vehicles and a fragmented, low-trust car-hire market lacked a transparent way to connect owners with renters.
+- **Stack:** React · Node.js · Mobile · Fintech-adjacent
+- **Engineering highlights:** founding engineer and COO, owning the product architecture end-to-end; multi-channel access across web and mobile; built the verification and booking flow from concept to production.
+- **Role:** Co-founder & COO
+- [Live Platform ↗][link-ardena-live]
+
+### [JamboSec AI — Cybersecurity Platform][link-jambosec-live]
+
+AI-powered platform for real-time threat detection, vulnerability analysis, and digital defense.
+
+- **Problem solved:** threat detection and vulnerability triage are typically manual and reactive.
+- **Stack:** AI · Cybersecurity · React · Node.js · Python · Supabase
+- **Engineering highlights:** built with a dedicated team; applies an ethical hacking and network analysis background directly to product design; AI integrated into the detection pipeline rather than bolted on.
+- [Live Platform ↗][link-jambosec-live]
+
+### [MK GitPilot — Developer Automation CLI][link-gitpilot-live]
+
+Smart CLI tool that automates Git workflows — init, branch, commit, push, sync.
+
+- **Problem solved:** repetitive Git workflow steps slow down solo and small-team shipping velocity.
+- **Stack:** Python · Node.js · React · Supabase
+- **Engineering highlights:** automation-first tool design; paired the CLI with a web dashboard for visibility; built to eliminate context-switching during active development.
+- [Live Dashboard ↗][link-gitpilot-live]
+
+### [Hicacy Destinations — Purpose-Led Travel Platform][link-hicacy-live]
+
+Community-led travel platform for discovering Western Kenya — Kakamega Forest, Mt. Elgon, Ruma National Park, and Ndere Island.
+
+- **Problem solved:** community-based tourism destinations lacked a modern, trustworthy discovery platform tied to local impact.
+- **Stack:** React · TypeScript · Tailwind CSS · Vite · React Router · Framer Motion
+- **Engineering highlights:** fully typed, animated frontend; content architecture built to scale across destinations; trip proceeds tied to regenerative agriculture and community projects.
+- [Live Platform ↗][link-hicacy-live]
+
+<details>
+<summary><strong>More projects</strong> — client and product work (7)</summary>
+
+<br/>
+
+| Project | Description | Stack / Focus | Links |
+|---|---|---|---|
+| **DPPM Ltd** | Corporate site for a Kenyan dairy machinery supplier — sales, installation, and commissioning | React · Tailwind CSS · Vite | [Live ↗][link-dppm-live] |
+| **Gerusabejo Building & Construction** | Site for a licensed Kenyan construction firm — service transparency and project showcase | Construction · Commercial · Residential | [Live ↗][link-gerusabejo-live] |
+| **Tucha's Auto Spares** | E-commerce presence for a Kenyan auto parts and accessories supplier | E-Commerce · Retail | [Live ↗][link-tuchas-live] |
+| **PatchNotes** | Developer platform for publishing patch notes, product updates, and long-form technical writing | Next.js · Supabase · Tailwind CSS · MDX | [Live ↗][link-patchnotes-live] |
+| **Palinesco** | Site for a Meru-based construction company — services, projects, client contact portal | React · shadcn/ui · Tailwind CSS · Vite | [Live ↗][link-palinesco-live] · [Source ↗][link-palinesco-src] |
+| **Caffeinated Thoughts** | Personal tech blog with an M-Pesa Daraja API-integrated "Buy Me a Coffee" flow | React · shadcn/ui · Tailwind CSS · M-Pesa API | [Live ↗][link-caffeinated-live] · [Source ↗][link-caffeinated-src] |
+| **Transport Booking — Matatu App** *(beta)* | Mobile platform for Kenyan commuters to book matatu seats and receive digital tickets | Flutter · Firebase · Google Maps API | [Live ↗][link-matatu-live] |
+
+</details>
+
+---
+
+<!-- =====================================================================
+     CURRENT FOCUS
+     ===================================================================== -->
+
+## Current Focus
+
+- Scaling Ardena Platform Africa's marketplace and trust/verification infrastructure
+- Extending applied AI tooling for developer and security workflows (JamboSec AI, MK GitPilot)
+- Deepening formal cybersecurity practice — network analysis and security auditing
+- Taking on select full-stack engagements outside of Ardena
+
+---
+
+<!-- =====================================================================
+     OPEN SOURCE
+     ===================================================================== -->
+
+## Open Source
+
+A subset of the projects above are public, including [MK GitPilot][link-gitpilot-live], which started as an internal workflow tool and is being opened up for other developers to use and extend.
+
+Open to code review, technical discussion, and pairing on anything in this profile. If you're working on developer tooling, applied security, or building in Kenya's tech ecosystem, reach out via [Connect](#connect).
+
+---
+
+<!-- =====================================================================
+     GITHUB ANALYTICS
+     ===================================================================== -->
+
+## GitHub Analytics
+
+<!--
+  NOTE: the stats + top-languages cards below run on the public
+  github-readme-stats.vercel.app instance. It is the actively maintained
+  industry-standard service (github.com/anuraghazra/github-readme-stats),
+  but its shared free Vercel deployment occasionally pauses under load
+  and returns a blank/error card until it resets. If that happens, either
+  wait for it to recover or deploy a private instance using the "Deploy
+  to Vercel" button in that project's README for guaranteed uptime.
+-->
 
 <div align="center">
-  
-  <img src="https://komarev.com/ghpvc/?username=KevRollin&label=Profile%20Views&color=0A1D37&style=for-the-badge" alt="Profile Views" />
-  
-  <br/><br/>
-  
-  <!-- Visitor Counter -->
-  <img src="https://img.shields.io/github/followers/KevRollin?label=Followers&style=for-the-badge&color=0A1D37" alt="Followers" />
-  <img src="https://img.shields.io/github/stars/KevRollin?label=Total%20Stars&style=for-the-badge&color=0A1D37" alt="Total Stars" />
-  
+
+<img src="https://github-readme-stats.vercel.app/api?username=Kevrollin&show_icons=true&hide_border=true&bg_color=0D1117&title_color=06B6D4&icon_color=6366F1&text_color=CBD5E1&ring_color=6366F1" alt="Kelvin Mukaria's GitHub stats" width="49%" />
+<img src="https://streak-stats.demolab.com?user=Kevrollin&hide_border=true&background=0D1117&ring=6366F1&fire=06B6D4&currStreakLabel=06B6D4&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=64748B" alt="Kelvin Mukaria's GitHub contribution streak" width="49%" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevrollin&layout=compact&hide_border=true&bg_color=0D1117&title_color=06B6D4&text_color=CBD5E1" alt="Kelvin Mukaria's most used languages" width="49%" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Kevrollin&bg_color=0D1117&color=06B6D4&line=6366F1&point=FFFFFF&hide_border=true&area=true" alt="Kelvin Mukaria's recent contribution activity" width="98%" />
+
 </div>
 
 ---
 
-<!-- Animated Footer with Wave -->
+<!-- =====================================================================
+     CONNECT
+     ===================================================================== -->
+
+## Connect
+
 <div align="center">
-  
-  <svg width="100%" height="120" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#0A1D37;stop-opacity:1" />
-        <stop offset="50%" style="stop-color:#1a3a5c;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#0A1D37;stop-opacity:1" />
-      </linearGradient>
-      <filter id="footerGlow">
-        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-        <feMerge>
-          <feMergeNode in="coloredBlur"/>
-          <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-      </filter>
-    </defs>
-    <path d="M0,0 Q250,40 500,0 T1000,0 L1000,120 L0,120 Z" fill="url(#footerGradient)" opacity="0.3">
-      <animate attributeName="d" 
-               values="M0,0 Q250,40 500,0 T1000,0 L1000,120 L0,120 Z;M0,0 Q250,20 500,0 T1000,0 L1000,120 L0,120 Z;M0,0 Q250,40 500,0 T1000,0 L1000,120 L0,120 Z" 
-               dur="3s" 
-               repeatCount="indefinite"/>
-    </path>
-    <rect width="100%" height="100%" fill="url(#footerGradient)"/>
-    <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#F8F9FA" text-anchor="middle" dominant-baseline="middle" filter="url(#footerGlow)">
-      <animate attributeName="opacity" values="0.6;1;1;0.6" dur="2s" repeatCount="indefinite"/>
-      Code, Create, Conquer.
-    </text>
-  </svg>
-  
-  <p style="margin-top: 20px; color: #0A1D37; font-weight: 600;">
-    <em>Building the future, one commit at a time.</em> 🚀
-  </p>
-  
-  <img src="https://raw.githubusercontent.com/KevRollin/KevRollin/output/github-contribution-grid-snake.svg" alt="Snake animation" />
-  
+
+[![Portfolio][badge-portfolio]][link-portfolio]
+[![LinkedIn][badge-linkedin]][link-linkedin]
+[![Email][badge-email]][link-email]
+
+Nakuru & Meru, Kenya
+
+<img src="https://komarev.com/ghpvc/?username=Kevrollin&color=6366F1&style=flat-square&label=Profile+Views" alt="Profile view count" />
+
 </div>
 
 ---
 
-<div align="center">
-  
-  **Made with ❤️ by Kelvin Mukaria (KevDev)**
-  
-  <sub>⚡ Elite Developer | 🔐 Ethical Hacker | 🌟 Visionary Builder</sub>
-  
-</div>
+<!-- =====================================================================
+     FOOTER
+     ===================================================================== -->
 
+<div align="center">
+
+Kelvin Mukaria — Software Engineer, Kenya
+
+</div>
